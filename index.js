@@ -30,7 +30,7 @@ const launchScrapper = async () => {
         const price = item.querySelector(".p-item-price span").textContent;
 
         const trimmedDesc = description.trim().split("\n").join(", ");
-        return { name, trimmedDesc, price };
+        return { name, description: trimmedDesc, price };
       });
     });
 
